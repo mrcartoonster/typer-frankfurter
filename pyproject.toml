@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "typer-frankfurter"
+version = "0.1.0"
+description = ""
+authors = ["Evan Baird <evanbaird@evans-mbp.lan>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.2"
+bpython = "^0.24"
+pytest-clarity = "^1.0.1"
+pytest-emoji = "^0.2.0"
+pre-commit = "^3.6.2"
+
+[tool.pytest.ini_options]
+addopts = "-rssxX -l --tb=short --strict --emoji -vvv -p no:warnings"
+xfail_strict = "True"
+markers = [
+  "smoke",
+  "fire",
+  "verify"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
