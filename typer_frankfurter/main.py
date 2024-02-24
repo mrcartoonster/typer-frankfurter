@@ -2,7 +2,9 @@
 
 import typer
 from typing_extensions import Annotated
-from vcr_main import japan_to_us, latest, tracked_currencies
+
+# from typer_frankfurter.helper import japan_to_us, latest, tracked_currencies
+from typer_frankfurter.vcr_main import japan_to_us, latest, tracked_currencies
 
 app = typer.Typer(help="CLI for currency exchange rates")
 
@@ -45,7 +47,3 @@ def currencies():
     Currencies that are available to view.
     """
     return tracked_currencies()
-
-
-if __name__ == "__main__":
-    app()

@@ -1,0 +1,60 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.frankfurter.app
+      user-agent:
+      - python-httpx/0.27.0
+    method: GET
+    uri: https://api.frankfurter.app/currencies
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1VSS27bQAy9yoBrnUA7/+XIVgTJRmrvWIuViCocdyTVTYpueqUeoei9iqfYMbKZ
+        BR/J9+H8pMl+TjFNhq4P3Cqbm/u25UARTVcZxTQd2poDgI18R7XYoBr4Vcf2QriliGYTrJmxcfVh
+        ySxZUkzlRbvOLQPbCbXsgN5GTTpxhdiz2md1h4EN6DEF+iqnxqU+DMYU0TxFcc6mXePS4E0oosW+
+        oJgWQ/AU0Wqaj7q0R0vuB6sooiSFrMRb7VI877qSPXQlg13NLX1Q6ymi9RxL11Z5k240OJyVGyCb
+        EkgXWFp1mVxc2cg3gft1dh26DgjkrUtoXp+kZav05NLw989o5iGH/wc+8xjAQWA7LZ4QlB/60baw
+        uScPYPsJZ9jKDz2xuVw6uN0eQLjlll/eRKrVtUJ/9gjWzIeL1EBuYWVHJAHVR2EoumeRJ4gub7TV
+        81lNbiT5Bsy5b5Ho8d9v379QRMUjqoV/Znv7FQNFVC7S8cxS3Q4Eo+UKnKVazWcf5M64S6YU065h
+        dVNuIHtXIJPdEL5iwUYD5vcl5vemvVSu7LmX7r7jOCneA5t8CWM6BVtFv/4DNWcXtdUCAAA=
+    headers:
+      Age:
+      - '340'
+      CF-Cache-Status:
+      - HIT
+      CF-RAY:
+      - 85ab38d0694551dd-DEN
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 24 Feb 2024 22:42:28 GMT
+      ETag:
+      - W/"6ad9767de05f3083ffea0c0a19f708fb"
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qNj1%2BmOUcmXaBOrD8zrgJla8%2FNYMujMO%2BovZ3HExl3HbkgJCaOVyYHNyR6dSArRdzKChk9SETTzI8OL9F6wgGuNJIaSCXF40qde84i4ok%2BdUjYkRuerpk%2FOpwlsHnGEDmF%2FF3lM%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      vary:
+      - Origin, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1

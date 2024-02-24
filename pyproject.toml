@@ -5,9 +5,15 @@ description = ""
 authors = ["Evan Baird <evanbaird@evans-mbp.lan>"]
 readme = "README.md"
 
+[tool.poetry.scripts]
+frankfurter='typer_frankfurter.main:app'
+
 [tool.poetry.dependencies]
 python = "^3.11"
 typer = {extras = ["all"], version = "^0.9.0"}
+pendulum = "^3.0.0"
+httpx = "^0.27.0"
+vcrpy = "^6.0.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.2"

@@ -3,7 +3,12 @@ import pendulum as p
 from rich import print
 from rich.console import Console
 from rich.table import Table
-from vcr_helper import getting_latest, japan_call, tracking_call
+
+from typer_frankfurter.vcr_helper import (
+    getting_latest,
+    japan_call,
+    tracking_call,
+)
 
 
 def japan_to_us(amount: int = 1000) -> None:
