@@ -241,5 +241,9 @@ tags
 # Persistent undo
 [._]*.un~
 
+# VCR Recording
+cassattes
+
 # End of https://www.toptal.com/developers/gitignore/api/python,vim,macos,linux
+
 

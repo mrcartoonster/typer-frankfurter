@@ -864,6 +864,40 @@ files = [
 pytest = ">=4.2.1"
 
 [[package]]
+name = "pytest-recording"
+version = "0.13.1"
+description = "A pytest plugin that allows you recording of network interactions via VCR.py"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "pytest_recording-0.13.1-py3-none-any.whl", hash = "sha256:e5c75feb2593eb4ed9362182c6640bfe19004204bf9a6082d62c91b5fdb50a3e"},
+    {file = "pytest_recording-0.13.1.tar.gz", hash = "sha256:1265d679f39263f115968ec01c2a3bfed250170fd1b0d9e288970b2e4a13737a"},
+]
+
+[package.dependencies]
+pytest = ">=3.5.0"
+vcrpy = ">=2.0.1"
+
+[package.extras]
+dev = ["pytest-recording[tests]"]
+tests = ["pytest-httpbin", "pytest-mock", "requests", "werkzeug (==3.0.1)"]
+
+[[package]]
+name = "pytest-vcr"
+version = "1.0.2"
+description = "Plugin for managing VCR.py cassettes"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pytest-vcr-1.0.2.tar.gz", hash = "sha256:23ee51b75abbcc43d926272773aae4f39f93aceb75ed56852d0bf618f92e1896"},
+    {file = "pytest_vcr-1.0.2-py2.py3-none-any.whl", hash = "sha256:2f316e0539399bea0296e8b8401145c62b6f85e9066af7e57b6151481b0d6d9c"},
+]
+
+[package.dependencies]
+pytest = ">=3.6.0"
+vcrpy = "*"
+
+[[package]]
 name = "python-dateutil"
 version = "2.8.2"
 description = "Extensions to the standard Python datetime module"
@@ -1332,4 +1366,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "dab9b02cb731e5cf8e64809b0758ec5a608ccb8afb4c59d7c3f170f7256054b5"
+content-hash = "2a596e1a1775e8d060a16a80fd413534e4089b4a757960f3a8297ade6f8fadf9"
