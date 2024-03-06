@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from pathlib import Path
+
 import httpx
 import vcr
 from rich import print
@@ -7,7 +9,16 @@ frankfuter_base_url = "https://api.frankfurter.app/latest"
 currencies_url = "https://api.frankfurter.app/currencies"
 
 
-@vcr.use_cassette("cassettes/japan_call.yaml", record_mode="new_episodes")
+test_cassettes = Path(
+    "/Users/evanbaird/Projects/Personal_Projects/typer-frankfurter/tests/cassettes/",
+)
+
+
+# Move cassettes to be saved in tests/cassettes!
+@vcr.use_cassette(
+    path=test_cassettes / "japan_call",
+    record_mode="new_episodes",
+)
 def japan_call(amount: int = 1000):
     param = {
         "amount": amount,
@@ -27,7 +38,10 @@ def japan_call(amount: int = 1000):
     return resp.json()
 
 
-@vcr.use_cassette(path="cassettes/latest.yaml", record_mode="new_episodes")
+@vcr.use_cassette(
+    path=test_cassettes / "getting_latest",
+    record_mode="new_episodes",
+)
 def getting_latest(country: str = "USD"):
     from_param = {"from": country.upper()}
     with httpx.Client(params=from_param) as client:
@@ -43,7 +57,7 @@ def getting_latest(country: str = "USD"):
 
 
 @vcr.use_cassette(
-    path="cassettes/tracked_currencies.yaml",
+    path=test_cassettes / "tracking_call",
     record_mode="new_episodes",
 )
 def tracking_call():
