@@ -1,0 +1,452 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.frankfurter.app
+      user-agent:
+      - python-httpx/0.27.0
+    method: GET
+    uri: https://api.frankfurter.app/latest?amount=1000&from=JPY&to=USD
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWSszNL80rUbIyNDAw0DPQUUpKLE5VslLyCohU0lFKSSwBcYwMjEx0DYx0jYyV
+        dJSKEktSi5WsqpVCg12UrMz0zEwNjGtrAbF5ShVJAAAA
+    headers:
+      CF-Cache-Status:
+      - REVALIDATED
+      CF-RAY:
+      - 85b1f36339941f44-DEN
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 25 Feb 2024 18:18:25 GMT
+      ETag:
+      - W/"6ad9767de05f3083ffea0c0a19f708fb"
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6n0jF%2B2ywL6gR9mSSEeoKTN6KzkUyWgBx3uTM3m1MpCybQYyjPstJYBNZdwJ4F96Z%2BrSWauVmL7rTFuzqR5OIMit1DoAgAmrDXbhAwpNAmE6F%2BsoFHu08%2B3rNppswUwPwRqojdg%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      vary:
+      - Origin, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.frankfurter.app
+      user-agent:
+      - python-httpx/0.27.0
+    method: GET
+    uri: https://api.frankfurter.app/latest?amount=3000000000&from=JPY&to=USD
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWSszNL80rUbIyNoABPQMdpaTE4lQlKyWvgEglHaWUxBIQx8jAyETXwFjX0FRJ
+        R6kosSS1WMmqWik02EXJysjA0MzMzNisthYANwmk5FEAAAA=
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 8656f7363fab7c20-DEN
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 16 Mar 2024 18:56:52 GMT
+      ETag:
+      - W/"038ad75cd48825ca66ee8f10d561c4f9"
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=eGEcNAwF7TbPanncCGA2u7Mh35L4iODrp%2FPzgDhJZ286uLhnsynsYdtVgrhF25KQtR7YkTeK4%2FauM6xSveYGYdm94CwIXftkOPeq%2FDGBLGennyIvT%2BvZHUD3Op1SjCx9aPuI8y4%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      vary:
+      - Origin, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.frankfurter.app
+      user-agent:
+      - python-httpx/0.27.0
+    method: GET
+    uri: https://api.frankfurter.app/latest?amount=3000000&from=JPY&to=USD
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWSszNL80rUbIyNgADPQMdpaTE4lQlKyWvgEglHaWUxBIQx8jAyETXwFjX0FRJ
+        R6kosSS1WMmqWik02EXJysjA0My8thYAbwDgrksAAAA=
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 8656f795e99c1f42-DEN
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 16 Mar 2024 18:57:07 GMT
+      ETag:
+      - W/"038ad75cd48825ca66ee8f10d561c4f9"
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=azrTkEj4dhO%2Bqd%2BoAbuihbucqitdpGFWuGpkejVVhkFhAcmPgFE8RbJTGP56Fmk55%2BP%2BuOKQqIk4s8Oh2EXRt3DGShDvOYCaWMehJgEBnxtL2CA7iUkEIIWjI2rhkkGE07IbY%2Fc%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      vary:
+      - Origin, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.frankfurter.app
+      user-agent:
+      - python-httpx/0.27.0
+    method: GET
+    uri: https://api.frankfurter.app/latest?amount=3058&from=JPY&to=USD
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWSszNL80rUbIyNjC10DPQUUpKLE5VslLyCohU0lFKSSwBcYwMjEx0DYx1DU2V
+        dJSKEktSi5WsqpVCg12UrIwM9ExNzWprAabK+odJAAAA
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 8656fc61f96d7b09-DEN
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 16 Mar 2024 19:00:24 GMT
+      ETag:
+      - W/"038ad75cd48825ca66ee8f10d561c4f9"
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Cs7dCkuGb6w72OK%2BY5fG7BICPOuiDiMdQr4JJRsgMEDFJgrH3BAM2hoOF1KeRvlQz6DcgD3ccTOJaGqjilAMTHuO6jAQ241V9BjpCxmqqXOOqRWx0TmRqrnfSeTUrtO7fd5J3Ww%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      vary:
+      - Origin, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.frankfurter.app
+      user-agent:
+      - python-httpx/0.27.0
+    method: GET
+    uri: https://api.frankfurter.app/latest?amount=63460&from=JPY&to=USD
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWSszNL80rUbIyMzYxM9Az0FFKSixOVbJS8gqIVNJRSkksAXGMDIxMdA2MdQ0t
+        lXSUihJLUouVrKqVQoNdlKxMjAz1zAxrawGLatSXSgAAAA==
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 866ef67189107b1c-DEN
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 19 Mar 2024 16:50:39 GMT
+      ETag:
+      - W/"f46b625f66634bfabaa2af5b60e1a894"
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=t%2Br5%2Bn1RuOPUk4l%2Fpw9FHup4sLHldlRQh97569kBRsyZcurSJvrT5YB%2FIMLbhWj6BjqBkLaVhPvFhFaE2lN2hSnT9%2FESLIK3ELw1I7csNCJbvlbH86EV9cgisY%2BaAtE4%2FGRVc3M%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      vary:
+      - Origin, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.frankfurter.app
+      user-agent:
+      - python-httpx/0.27.0
+    method: GET
+    uri: https://api.frankfurter.app/latest?amount=22440&from=JPY&to=USD
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWSszNL80rUbIyMjIxMdAz0FFKSixOVbJS8gqIVNJRSkksAXGMDIxMdA2MdQ0t
+        lXSUihJLUouVrKqVQoNdlKwMTSz1DCxqawHe+2OASgAAAA==
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 866f022f48f551f5-DEN
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 19 Mar 2024 16:58:40 GMT
+      ETag:
+      - W/"f46b625f66634bfabaa2af5b60e1a894"
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=%2BzEQziIRz0G8eQEl1ui89TwIy0mnFLxKRLshGvFvUDctgRS81ymJRXmGF%2F3TWETNKyP8CJY7cpwzXwpEZKVmnk3yPERcyzekSXBPVflTUSQUSYGq8MDLmpPPnXXVmtN0L%2BiwIOQ%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      vary:
+      - Origin, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.frankfurter.app
+      user-agent:
+      - python-httpx/0.27.0
+    method: GET
+    uri: https://api.frankfurter.app/latest?amount=80000&from=JPY&to=USD
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWSszNL80rUbKyMDAwMNAz0FFKSixOVbJS8gqIVNJRSkksAXGMDIxMdA2MdQ0t
+        lXSUihJLUouVrKqVQoNdlKxMjQ31TA1rawE5yphKSgAAAA==
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 86736e220abe1f4a-DEN
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 20 Mar 2024 05:51:24 GMT
+      ETag:
+      - W/"f46b625f66634bfabaa2af5b60e1a894"
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=VF9qsJ8GL4LZE4CSZCRIn3EksD%2BreB%2BW0OFAnc%2F3RjwLPHahvSSDvlLedFRJw9OgbW9WFlFR0WcdxxQoDH4ClBEuOTEgtJt%2Bsrz0MwyGBDlRPVhBrByBFrmLkQetOsSHfKvmj7M%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      vary:
+      - Origin, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.frankfurter.app
+      user-agent:
+      - python-httpx/0.27.0
+    method: GET
+    uri: https://api.frankfurter.app/latest?amount=82000&from=JPY&to=USD
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWSszNL80rUbKyMDIwMNAz0FFKSixOVbJS8gqIVNJRSkksAXGMDIxMdA2MdQ0t
+        lXSUihJLUouVrKqVQoNdlKxMTUz0zC1rawGPKY7aSgAAAA==
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 86736fe33be01f49-DEN
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 20 Mar 2024 05:52:36 GMT
+      ETag:
+      - W/"f46b625f66634bfabaa2af5b60e1a894"
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=NBjukOvISeprBcjntoCpgN6ZG1GBEpfwuXtXY8aUt1Pn5OSGMalRffcWFZ8QvJMOwYDfruUoyGPTcl8tn8XuF3la9EIEcRkbhjQkqWkw%2FBxoeK%2BD8vqgOTBSmvZtR%2FWEFVMPM2U%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      vary:
+      - Origin, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.frankfurter.app
+      user-agent:
+      - python-httpx/0.27.0
+    method: GET
+    uri: https://api.frankfurter.app/latest?amount=165000&from=JPY&to=USD
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWSszNL80rUbIyNDM1MDDQM9BRSkosTlWyUvIKiFTSUUpJLAFxjAyMTHQNjHUN
+        LZV0lIoSS1KLlayqlUKDXZSsDA0szfSMjGtrAbSMhXlMAAAA
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 86737d119f435198-DEN
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 20 Mar 2024 06:01:36 GMT
+      ETag:
+      - W/"f46b625f66634bfabaa2af5b60e1a894"
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=PVOOi%2FihbWaKAfQCSB829hzWxtQi730esdas5hVHSRsd8WaBu8WWliYCTQGMZM%2F8YnvAcEB9rnfvvH%2FYUdYAhVkhFvq3A4TdahdusKmVo0MAT9qo5oMttcUtGLHa7bWWiKANKB0%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      vary:
+      - Origin, Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1

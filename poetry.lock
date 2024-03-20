@@ -864,25 +864,6 @@ files = [
 pytest = ">=4.2.1"
 
 [[package]]
-name = "pytest-recording"
-version = "0.13.1"
-description = "A pytest plugin that allows you recording of network interactions via VCR.py"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "pytest_recording-0.13.1-py3-none-any.whl", hash = "sha256:e5c75feb2593eb4ed9362182c6640bfe19004204bf9a6082d62c91b5fdb50a3e"},
-    {file = "pytest_recording-0.13.1.tar.gz", hash = "sha256:1265d679f39263f115968ec01c2a3bfed250170fd1b0d9e288970b2e4a13737a"},
-]
-
-[package.dependencies]
-pytest = ">=3.5.0"
-vcrpy = ">=2.0.1"
-
-[package.extras]
-dev = ["pytest-recording[tests]"]
-tests = ["pytest-httpbin", "pytest-mock", "requests", "werkzeug (==3.0.1)"]
-
-[[package]]
 name = "pytest-vcr"
 version = "1.0.2"
 description = "Plugin for managing VCR.py cassettes"
@@ -1366,4 +1347,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "59a8cc99be8142ecbd4b50f2fdd618cfd1e8e99c70a2b05f0dda847fb42ba354"
+content-hash = "1b48c06170b8956a7e02075e3d97556b8c5956165a36c058a4405b2b5444c76b"

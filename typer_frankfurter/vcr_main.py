@@ -20,7 +20,8 @@ def japan_to_us(amount: int = 1000) -> None:
     date = p.now().to_day_datetime_string()
 
     print(
-        f"The amount of {amount} in Japanese :yen: to American :dollar: is: [bold green]$[/]{rate:,}. This is as of: {date}.",
+        f"The amount of {amount:,} in Japanese :yen: to American :dollar: is: [bold green]$[/]{rate:,}. "
+        f"This is as of: {date}.",
     )
 
 
