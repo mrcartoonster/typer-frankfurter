@@ -8,5 +8,10 @@ runner = CliRunner()
 
 
 def test_japan():
-    result = runner.invoke(app, ["japan-to-usd"])
+    result = runner.invoke(app, ["yen-to-usd"])
     assert result.exit_code == 0
+
+
+def test_yen():
+    """Test amount"""
+    pass
