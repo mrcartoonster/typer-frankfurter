@@ -800,6 +800,19 @@ pyyaml = ">=5.1"
 virtualenv = ">=20.10.0"
 
 [[package]]
+name = "pur"
+version = "7.3.1"
+description = "Update packages in a requirements.txt file to latest versions."
+optional = false
+python-versions = "*"
+files = [
+    {file = "pur-7.3.1.tar.gz", hash = "sha256:ac693e4c1b7c8fa376b198ce797488befa65f0965ce13b4a8659fd44113a24ba"},
+]
+
+[package.dependencies]
+click = ">=8.0.0"
+
+[[package]]
 name = "pygments"
 version = "2.17.2"
 description = "Pygments is a syntax highlighting package written in Python."
@@ -1347,4 +1360,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "c84a979b3625edf5a3619e3e0c0b09bfc65f38eb1ca8548d20f190d3d6f3c1fb"
+content-hash = "ca866b3dbd53150ca55c6847d754d14aff8423c6baf18e14708088428ec3bb05"
