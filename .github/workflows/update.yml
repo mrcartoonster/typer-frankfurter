@@ -1,0 +1,23 @@
+name: Python update
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setting up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+        cache: 'pip'
+    - name: Installing dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Running pur
+      run: |
+        python -m pur -r requirements.txt
+        python -m pip install -r requirements.txt
+
