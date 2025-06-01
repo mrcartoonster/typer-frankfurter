@@ -16,14 +16,18 @@ httpx = "^0.27.0"
 vcrpy = "^6.0.1"
 pytest-vcr = "^1.0.2"
 pur = "^7.3.1"
+currencyapicom = "^0.1.1"
+freecurrencyapi = "^0.1.0"
+environs = "^11.2.1"
+uv = "^0.7.8"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.2"
-bpython = "^0.24"
 pytest-clarity = "^1.0.1"
 pytest-emoji = "^0.2.0"
 pre-commit = "^3.6.2"
 pytest-vcr = "^1.0.2"
+ipython = "^8.30.0"
 
 [tool.pytest.ini_options]
 addopts = "-rssxX -l --tb=short --strict --emoji -vvv -p no:warnings"

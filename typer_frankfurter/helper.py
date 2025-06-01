@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
+from dataclasses import dataclass
+
 import httpx
 import pendulum as p
 from rich import print
 from rich.console import Console
 from rich.table import Table
 
-u = "https://api.frankfurter.app/latest"
+u = "https://api.frankfurter.dev/"
 
 
 def japan_to_us(amount: int = 1000) -> None:
-
     param = {
         "amount": amount,
         "from": "JPY",
@@ -38,7 +39,7 @@ def latest(frm: str = "USD"):
 
     table = Table(
         title=f"[bold]Current Exchange Rate[/]. Using: [green]{rate_dict['base']}[/]",
-        caption=f'As of: {rate_dict["date"]}',
+        caption=f"As of: {rate_dict['date']}",
     )
 
     table.add_column("[bold grey70]Country[/]", style="magenta")
@@ -72,3 +73,53 @@ def tracked_currencies():
     currency_table = console.print(table)
 
     return currency_table
+
+
+@dataclass
+class Conversion:
+    """
+    Class that outputs Currencies trakced and simple Conversion.
+    """
+
+    base: str = "BRL"
+    to: str = "USD"
+
+    @staticmethod
+    def currencies():
+        """
+        Return current currency rates against the base.
+        """
+        with httpx.Client() as client:
+            try:
+                r = client.get("https://api.frankfurter.dev/v1/currencies")
+                r.raise_for_status()
+                print(r.json())
+            except httpx.HTTPError as exc:
+                print(f"Error while requestiong {exc.request.url!r}.")
+
+    def convert(self, amount: float):
+        """
+        Returns the exchange rate of the base towards the to.
+        """
+        with httpx.Client() as client:
+            params = {"base": self.base, "symbols": self.to}
+            r = client.get(
+                "https://api.frankfurter.dev/v1/latest",
+                params=params,
+            )
+
+            c = r.json()
+            total = c["rates"][self.to] * amount
+            print(f"The {amount} in {self.base} is {total:.2f} in {self.to}")
+
+    def rates(self):
+        """
+        Returns Rates for the base against all currencies.
+        """
+        with httpx.Client() as client:
+            params = {"base": self.base}
+            r = client.get(
+                "https://api.frankfurter.dev/v1/latest",
+                params=params,
+            )
+        print(r.json())
