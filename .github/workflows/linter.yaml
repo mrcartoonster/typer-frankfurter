@@ -1,0 +1,4 @@
+name: Ruff Linting
+
+on:
+  push:

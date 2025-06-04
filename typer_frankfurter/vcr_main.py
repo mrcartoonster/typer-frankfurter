@@ -12,7 +12,6 @@ from typer_frankfurter.vcr_helper import (
 
 
 def japan_to_us(amount: int = 1000) -> None:
-
     current = japan_call(amount=amount)
 
     rate = round(current["rates"]["USD"], 2)
@@ -20,7 +19,8 @@ def japan_to_us(amount: int = 1000) -> None:
     date = p.now().to_day_datetime_string()
 
     print(
-        f"The amount of {amount:,} in Japanese :yen: to American :dollar: is: [bold green]$[/]{rate:,}. "
+        f"The amount of {amount:,} \
+        in Japanese :yen: to American :dollar: is: [bold green]$[/]{rate:,}. "
         f"This is as of: {date}.",
     )
 
@@ -35,7 +35,7 @@ def latest(frm: str = "USD"):
 
     table = Table(
         title=f"[bold]Current Exchange Rate[/]. Using: [green]{rate_dict['base']}[/]",
-        caption=f'As of: {rate_dict["date"]}',
+        caption=f"As of: {rate_dict['date']}",
     )
 
     table.add_column("[bold grey70]Country[/]", style="magenta")

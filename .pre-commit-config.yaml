@@ -36,9 +36,6 @@ repos:
           - id: fix-encoding-pragma
           - id: forbid-new-submodules
           - id: mixed-line-ending
-          - id: requirements-txt-fixer
-            #    -   id: pretty-format-json
-            # args: [--autofix, --indent]
           - id: trailing-whitespace
             args: [--markdown-linebreak-ext=md] # Preserve Markdown hard linebreaks
     - repo: https://github.com/asottile/add-trailing-comma

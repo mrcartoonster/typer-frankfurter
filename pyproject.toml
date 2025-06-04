@@ -20,6 +20,7 @@ currencyapicom = "^0.1.1"
 freecurrencyapi = "^0.1.0"
 environs = "^11.2.1"
 uv = "^0.7.8"
+ruff = "^0.11.12"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.2"
