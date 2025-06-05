@@ -1,4 +1,25 @@
 name: Ruff Linting
 
-on:
-  push:
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.7.10"
+          enable-cache: true
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: "pyproject.toml"
+
+      - name: Installing Ruff
+        run: uv add Ruff
+
+      - name: Ruff Linting
+        run: ruff check typer_frankfurter/
