@@ -6,29 +6,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v5
-        with:
-          version: "0.7.10"
-          # enable-cache: true
-
-      - name: "Set up Python"
+      - name: Python setup
         uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
 
-      - name: Getting director
-        run: ls
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          virtualenvs-path: .venv
+          installer-parallel: true
 
-      - name: Install
-        run: uv sync --locked --all-extras --dev
-
-      - name: Ruff Linting
-        run: uv ruff check typer_frankfurter/
-
-      # - name: Ruff Linting
-      #   uses: astral-sh/ruff-action@v3
-      #   with:
-      #     version: 0.8.0
-      #     args: check
-      #     src: "typer_frankfurter/"
+      - name: Ruff Linter
+        run: poetry run ruff check .
