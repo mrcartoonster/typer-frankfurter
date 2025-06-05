@@ -19,7 +19,8 @@ jobs:
           python-version-file: "pyproject.toml"
 
       - name: Installing Ruff
-        run: uv add Ruff
-
-      - name: Ruff Linting
-        run: ruff check typer_frankfurter/
+        uses: astral-sh/ruff-actions@v3
+        with:
+          version: 0.8.0
+          args: check
+          src: "typer_frankfurter/"
