@@ -19,7 +19,7 @@ jobs:
           python-version-file: "pyproject.toml"
 
       - name: Installing Ruff
-        uses: astral-sh/ruff-actions@v3
+        uses: astral-sh/ruff-action@v3
         with:
           version: 0.8.0
           args: check
