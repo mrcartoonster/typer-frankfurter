@@ -23,5 +23,4 @@ jobs:
           installer-parallel: true
 
       - name: Ruff Linter
-        # run: poetry run ruff check .
-        run: poetry show
+        run: poetry run ruff check typer_frankfurter/
