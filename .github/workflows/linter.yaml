@@ -17,11 +17,14 @@ jobs:
       - name: "Set up Python"
         uses: actions/setup-python@v5
 
+      - name: Getting director
+        run: ls
+
       - name: Install
         run: uv sync --locked --all-extras --dev
 
       - name: Ruff Linting
-        run: ruff check typer_frankfurter/
+        run: uv ruff check typer_frankfurter/
 
       # - name: Ruff Linting
       #   uses: astral-sh/ruff-action@v3
