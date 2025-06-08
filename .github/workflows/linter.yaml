@@ -23,7 +23,7 @@ jobs:
           installer-parallel: true
 
       - name: Install Packages
-        run: Poetry install --all-groups -vv
+        run: poetry install --all-groups -vv
 
       - name: Ruff Linter
         run: poetry run ruff check typer_frankfurter/
