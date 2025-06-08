@@ -6,11 +6,11 @@ authors = ["Evan Baird <evanbaird@evans-mbp.lan>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
-frankfurter='typer_frankfurter.main:app'
+frankfurter = 'typer_frankfurter.main:app'
 
 [tool.poetry.dependencies]
 python = "^3.11"
-typer = {extras = ["all"], version = "^0.9.0"}
+typer = { extras = ["all"], version = "^0.9.0" }
 pendulum = "^3.0.0"
 httpx = "^0.27.0"
 vcrpy = "^6.0.1"
@@ -33,11 +33,10 @@ ipython = "^8.30.0"
 [tool.pytest.ini_options]
 addopts = "-rssxX -l --tb=short --strict --emoji -vvv -p no:warnings"
 xfail_strict = "True"
-markers = [
-  "smoke",
-  "fire",
-  "verify"
-]
+markers = ["smoke", "fire", "verify"]
+
+[tool.poetry.requires-plugins]
+poetry-plugin-export = ">=1.8"
 
 [build-system]
 requires = ["poetry-core"]
