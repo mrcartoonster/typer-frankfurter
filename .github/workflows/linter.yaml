@@ -12,19 +12,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install Poetry
+        run: pipx install poetry
+
       - name: Python setup
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
           cache: "poetry"
-
-      - name: Install Poetry
-        uses: snok/install-poetry@v1
-        with:
-          virtualenvs-create: true
-          virtualenvs-in-project: true
-          virtualenvs-path: .venv
-          installer-parallel: true
 
       - name: Install Packages
         run: poetry install --all-groups -q
