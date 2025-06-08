@@ -25,4 +25,4 @@ jobs:
         run: poetry install --all-groups -q
 
       - name: Ruff Linter
-        run: poetry run ruff check typer_frankfurter/
+        run: poetry run ruff check .
